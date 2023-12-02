@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+img{
+    width: 100%;
+}
+body{
+    background: #212121;
+}
+nav{
+    background: white;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+/*Media Querirs-Mobile First Approach*/
+/* Mobiles */
+@media(min-width:300px)  {
+   nav img{
+    height: 5vh;
+    width: auto;
+    margin-right: 1rem;
+   } 
+   nav{
+    display: flex;
+    justify-content: center;
+    padding:2vh 0 ;
+
+   }
+   nav h3{
+    color: #212121;
+    font-weight: bolder;
+   }
+   .one h4,p{
+    text-align: center;
+    padding: 1.5vh 0;
+   } 
+   .one h4{
+    margin-top: 5vh;
+   }
+   .two{
+    background: white;
+    padding: 1.5rem;
+    width: 80%;
+    margin: 5vh auto;
+    border-radius: 12px;
+
+   }
+   .two input[type="text"]{
+    border: none;
+    padding: 0.8rem;
+    outline: none;
+    border-bottom: 1px solid #212121;
+    font-size: 1.2rem;
+    width: 90%;
+    color: #212121;
+    
+   }
+   .two label{
+   color: #212121;
+   }
+  .two input[type="radio"],input[type="checkbox"]{
+    margin-right: 1rem;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    
+  }
+  .checkboxs{
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+  }
+  .button{
+    background-color: #212121;
+    font-weight: bold;
+    border:none;
+    outline: none;
+    width: 80%;
+    padding: 0.9rem;
+    border-radius: 12px;
+    margin-top: 3vh;
+  }
+  .equipment_list h3{
+    text-align: center;
+    margin: 5vh auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: medium;
+  }
+  .cards{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+  }
+  .card{
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 1.5rem;
+
+  }
+  .segmentA{
+    background: white;
+    
+  }
+  .segmentA h3{
+    color: #212121;
+    text-align: center;
+    /* padding: 2vh; */
+    padding-top: 4vh;
+    
+  }
+  .segmentA img{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 2vh;
+    display: flex;
+    justify-content: center;
+  }
+  .segmentB{
+    background:#212121;
+  }
+  .segmentB h3{
+    text-align: center;
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+  }
+  .segmentB img{
+    padding: 12px;
+    padding-bottom: 60%;
+  }
+}
